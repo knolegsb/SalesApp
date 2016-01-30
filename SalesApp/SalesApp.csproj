@@ -63,6 +63,7 @@
     </Compile>
     <Compile Include="Interfaces\IActive.cs" />
     <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\ObservableListSource.cs" />
     <Compile Include="Models\Sale.cs" />
     <Compile Include="Models\SalesPerson.cs" />
     <Compile Include="Models\SalesRegion.cs" />
