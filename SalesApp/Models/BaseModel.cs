@@ -12,13 +12,14 @@ namespace SalesApp.Models
         [Key]
         [Required]
         public int Id { get; set; }
+        //public Guid Id { get; set; }
 
         [Required]
         [StringLength(100)]
         public string CreatedBy { get; set; }
 
         [Required]
-        public DateTime Created { get; set; }
+        public DateTime CreatedDate { get; set; }
 
         [Required]
         [StringLength(100)]
