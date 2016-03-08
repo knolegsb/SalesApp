@@ -25,5 +25,19 @@ namespace SalesApp.Models
 
         [Required]
         public int RegionId { get; set; }
+
+        public virtual ObservableListSource<Sale> Sales { get; set; }
+
+        [Required]
+        [Range(0, double.MaxValue)]
+        public decimal SalesTarget { get; set; }
+
+        public string FullName
+        {
+            get
+            {
+                return string.Format("{0} {1}", FirstName, LastName).Trim();
+            }
+        }
     }
 }

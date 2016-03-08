@@ -67,6 +67,14 @@
     <Compile Include="Migrations\201603070853222_initial.Designer.cs">
       <DependentUpon>201603070853222_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201603070926147_SalesTargets.cs" />
+    <Compile Include="Migrations\201603070926147_SalesTargets.Designer.cs">
+      <DependentUpon>201603070926147_SalesTargets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603070946206_SalesRegionChage.cs" />
+    <Compile Include="Migrations\201603070946206_SalesRegionChage.Designer.cs">
+      <DependentUpon>201603070946206_SalesRegionChage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\ObservableListSource.cs" />
@@ -75,8 +83,17 @@
     <Compile Include="Models\SalesRegion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201603070853222_initial.resx">
       <DependentUpon>201603070853222_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603070926147_SalesTargets.resx">
+      <DependentUpon>201603070926147_SalesTargets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603070946206_SalesRegionChage.resx">
+      <DependentUpon>201603070946206_SalesRegionChage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -88,6 +105,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\SalesApp.Models.Sale.datasource" />
+    <None Include="Properties\DataSources\SalesApp.Models.SalesPerson.datasource" />
+    <None Include="Properties\DataSources\SalesApp.Models.SalesRegion.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
