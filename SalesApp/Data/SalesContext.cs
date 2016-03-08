@@ -23,6 +23,7 @@ namespace SalesApp.Data
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+            //modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
         public override int SaveChanges()

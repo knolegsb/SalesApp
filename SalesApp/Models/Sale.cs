@@ -26,5 +26,8 @@ namespace SalesApp.Models
 
         [Required]
         public int RegionId { get; set; }
+
+        [Required]
+        public SalesStatuses Status { get; set; }
     }
 }

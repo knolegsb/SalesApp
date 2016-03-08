@@ -2,12 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace SalesApp.Models
 {
+    [Table("SalesPeople")]
     class SalesPerson : BaseModel, IActive
     {
         [Required]
@@ -30,6 +32,7 @@ namespace SalesApp.Models
 
         [Required]
         [Range(0, double.MaxValue)]
+        [Column("Target")]
         public decimal SalesTarget { get; set; }
 
         public string FullName
